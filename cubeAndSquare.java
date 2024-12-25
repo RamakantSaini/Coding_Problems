@@ -5,7 +5,7 @@ public class cubeAndSquare {
         double cube=0;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your number : ");
-        double num=sc.nextInt();
+        double num=sc.nextDouble();
         square=Math.pow(num,2);
         cube=Math.pow(num,3);
         System.out.println("Square is : "+ square);
