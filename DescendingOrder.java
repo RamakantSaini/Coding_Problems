@@ -15,8 +15,7 @@ public class DescendingOrder {
     }
     public static void main(String[] args) {
         int arr[]={389,600,50};
-        printNumbers(arr);
-        
+        printNumbers(arr);  
     }
 
     
