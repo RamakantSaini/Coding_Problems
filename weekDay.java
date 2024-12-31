@@ -1,10 +1,7 @@
 import java.util.Scanner;
 public class weekDay {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number from 1 to 7 : ");
-        int day=sc.nextInt();
-        if(day>=1 && day<=7){
+    public static void printDays(int day){
+        if(day>1 && day<7){
             switch(day){
                 case 1:
                     System.out.println("Monday");
@@ -29,8 +26,15 @@ public class weekDay {
                     break;
             }
         }else{
-            System.out.println("invalid input!");
+                System.out.println("Invalid! day number");
         }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number from 1 to 7 : ");
+        int day=sc.nextInt();
+        printDays(day);
+        
     }
     
 }
